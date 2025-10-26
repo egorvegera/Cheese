@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=DM+Serif+Text:ital@0;1&display=swap');
+
+body {
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 400;
+    color: #000;
+    background-color: #fff;
+    min-width: 320px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+section {
+    padding: 50px 0;
+}
+a {
+    color: #111;
+}
+a:hover {
+    color: #555;
+}
+.navbar-brand {
+    font-size: 28px;
+}
+.nav-item .nav-link {
+    color: #111;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-align: center;
+}
+.navbar-nav .dropdown-menu {
+    right: 0;
+    left: auto;
+}
+.header__nav-menu li a::after {
+    content: '';
+    display: block;
+    width: 100px;
+    background-color: #111;
+    height: 1px;
+    transition: all .3s;
+    transform: scale(0);
+}
+.header__nav-menu li a:hover:after {
+    transform: scale(1);
+}
+/* Carousel */
+.carousel {
+    padding: 0;
+}
+.carousel__item {
+    position: relative;
+    width: 100%;
+    height: 650px;
+    max-height: 80vh;
+}
+.carousel__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.carousel__inner {
+    font-size: 28px;
+}
+.carousel__caption {
+    background-color: rgba(233, 236, 239, 0.8);
+    color: #111;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.carousel__caption p {
+    margin: 0;
+    font-size: 1.5rem;
+}
+@media (max-width: 768px) {
+    .carousel__item {
+        height: 400px;
+    }
+    .carousel__caption {
+        display: block !important;
+        font-size: 1rem;
+    }
+    .carousel__caption p {
+        font-size: 1rem;
+    }
+}
+/* Product Card */
+.product-card {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06);
+    transition: all .3s;
+    padding-top: 20px;
+}
+.product-card:hover {
+    box-shadow: 0 14px 30px -15px rgba(0, 0, 0, 0.75);
+}
+.product-card__thumb a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+.product-card__thumb img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.product-card__details {
+    padding: 20px;
+}
+.product-card__details h4 a {
+    font-weight: 500;
+    display: block;
+    text-decoration: none;
+}
+.product-card__details p {
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: #999;
+}
+.product-card__bottom-details {
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+.product-card__price {
+    font-size: 18px;
+    color: #111;
+    font-weight: 600;
+}
+.product-card__links a {
+    font-size: 15px;
+    color: #111;
+    font-weight: 600;
+    text-decoration: none;
+}
+/* Categories */
+.container {
+    max-width: 1110px;
+}
+.section-title {
+    font-size: 50px;
+}
+.category-item {
+    height: 357px;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06);
+    transition: all .3s;
+}
+.category-item:hover {
+    box-shadow: 0 14px 30px -15px rgba(0, 0, 0, 0.75);
+}
+.category-item_type_italy {
+    background-image: url(/images/italycheese.jpeg); 
+}
+.category-item_type_france {
+    background-image: url(/images/francecheese.jpeg); 
+}
+.category-item_type_russia {
+    background-image: url(/images/russiacheese.jpeg); 
+}
+.category-item__info {
+    position: absolute;
+    bottom: 0;
+    left: 0.75rem;
+    width: 100%;
+    font-size: 24px;
+    background-color: rgba(233, 236, 239, 1);
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.category-item__info h3 {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 0;
+}
+.category-item__info .col-7 {
+    text-align: right;
+}
+.category-item__info p {
+    font-size: 24px;
+    color: black;
+    border: 1.5px solid black;
+    border-radius: 5px;
+    margin-bottom: 0;
+}
+/* Cart */
+.cart__list {
+    min-height: 100px;
+}
+.cart__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+.cart__item-name {
+    font-size: 16px;
+    font-weight: 500;
+}
+.cart__item-price {
+    font-size: 16px;
+    color: #111;
+}
+.cart__item-quantity {
+    font-size: 16px;
+    color: #555;
+}
+.cart__total {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: right;
+}
+.cart__total-amount {
+    color: #111;
+}
+.cart__actions {
+    text-align: right;
+}
+.cart__clear-btn {
+    font-size: 16px;
+}
+#contact-map {
+    width: 100%;
+    height: 600px;
+} 
+#contact-map iframe {
+    width: 100% !important;
+    height: 100%;
+}
+/* Footer */
+.footer {
+    background-color: rgba(233, 236, 239, 1);
+}
+/* Скрытие секций */
+.products-section__category_hidden {
+    display: none;
+}
