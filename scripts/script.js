@@ -70,7 +70,7 @@ function hideAllSections() {
 // Функция для загрузки сыров по категории
 async function loadCheeses(category) {
   try {
-    const response = await fetch('/cheeses.json');
+    const response = await fetch('cheeses.json');
     const cheeses = await response.json();
     // Скрываем все секции
     hideAllSections();
@@ -120,4 +120,5 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Обработчик кнопки очистки корзины
   document.querySelector('.cart__clear-btn').addEventListener('click', clearCart);
+
 });
