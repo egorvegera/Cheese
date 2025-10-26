@@ -153,13 +153,13 @@ a:hover {
     box-shadow: 0 14px 30px -15px rgba(0, 0, 0, 0.75);
 }
 .category-item_type_italy {
-    background-image: url(images/italycheese.jpeg); 
+    background-image: url('images/italycheese.jpeg'); 
 }
 .category-item_type_france {
-    background-image: url(images/francecheese.jpeg); 
+    background-image: url('images/francecheese.jpeg'); 
 }
 .category-item_type_russia {
-    background-image: url(images/russiacheese.jpeg); 
+    background-image: url('images/russiacheese.jpeg'); 
 }
 .category-item__info {
     position: absolute;
@@ -240,3 +240,4 @@ a:hover {
     display: none;
 
 }
+
