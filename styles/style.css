@@ -156,10 +156,10 @@ a:hover {
     background-image: url('images/italycheese.jpeg'); 
 }
 .category-item_type_france {
-    background-image: url("images/francecheese.jpeg"); 
+    background-image: url('images/francecheese.jpeg');
 }
 .category-item_type_russia {
-    background-image: url("images/russiacheese.jpeg"); 
+    background-image: url('images/russiacheese.jpeg'); 
 }
 .category-item__info {
     position: absolute;
@@ -240,6 +240,7 @@ a:hover {
     display: none;
 
 }
+
 
 
 
