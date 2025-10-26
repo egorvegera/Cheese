@@ -143,9 +143,7 @@ a:hover {
 .category-item {
     height: 357px;
     position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background-color: #f0f0f0; /* Fallback color */
     box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06);
     transition: all .3s;
 }
@@ -153,13 +151,13 @@ a:hover {
     box-shadow: 0 14px 30px -15px rgba(0, 0, 0, 0.75);
 }
 .category-item_type_italy {
-    background-image: url('images/italycheese.jpeg'); 
+    background-color: #e6f3e6; /* Light green for Italy */
 }
 .category-item_type_france {
-    background-image: url('images/francecheese.jpeg');
+    background-color: #e6e6f3; /* Light blue for France */
 }
 .category-item_type_russia {
-    background-image: url('images/russiacheese.jpeg'); 
+    background-color: #f3e6e6; /* Light red for Russia */
 }
 .category-item__info {
     position: absolute;
@@ -185,6 +183,12 @@ a:hover {
     border: 1.5px solid black;
     border-radius: 5px;
     margin-bottom: 0;
+}
+.category-item__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
 }
 /* Cart */
 .cart__list {
@@ -238,10 +242,4 @@ a:hover {
 /* Скрытие секций */
 .products-section__category_hidden {
     display: none;
-
 }
-
-
-
-
-
